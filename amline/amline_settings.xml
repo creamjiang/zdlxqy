@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <data_type>xml</data_type>
+  <csv_separator></csv_separator>
+  <skip_rows></skip_rows>
+  <font></font>
+  <text_size></text_size>
+  <text_color></text_color>
+  <decimals_separator></decimals_separator>
+  <thousands_separator></thousands_separator>
+  <digits_after_decimal>2</digits_after_decimal>
+  <!-- 图标是否自动撑开 -->
+  <redraw>true</redraw>
+  <reload_data_interval></reload_data_interval>
+  <preloader_on_reload></preloader_on_reload>
+  <add_time_stamp></add_time_stamp>
+  <precision></precision>
+  <connect></connect>
+  <hide_bullets_count></hide_bullets_count>
+  <link_target></link_target>
+  <start_on_axis></start_on_axis>
+  <colors></colors>
+  <rescale_on_hide></rescale_on_hide>
+  <js_enabled></js_enabled>
+  
+  <plot_area>
+    <color></color>
+    <alpha></alpha>
+    <border_color></border_color>
+    <border_alpha></border_alpha>
+    <!-- 距离外侧边框多少像素 -->
+    <margins>
+      <left>35</left>
+      <top>20</top>
+      <right>20</right>
+      <bottom>50</bottom>
+    </margins>
+  </plot_area>
+  
+  <grid>
+    <x>
+      <enabled></enabled>
+      <color></color>
+      <alpha></alpha>
+      <dashed></dashed>
+      <dash_length></dash_length>
+      <!-- X轴上显示的数量 -->
+      <approx_count>30</approx_count>
+    </x>
+    <y_left>
+      <enabled></enabled>
+      <color></color>
+      <alpha></alpha>
+      <dashed></dashed>
+      <dash_length></dash_length>
+      <approx_count></approx_count>
+      <fill_color></fill_color>
+      <fill_alpha></fill_alpha>
+    </y_left>
+    <y_right>
+      <enabled></enabled>
+      <color></color>
+      <alpha></alpha>
+      <dashed></dashed>
+      <dash_length></dash_length>
+      <approx_count></approx_count>
+      <fill_color></fill_color>
+      <fill_alpha></fill_alpha>
+    </y_right>
+  </grid>
+  
+  <indicator>
+    <enabled></enabled>
+    <zoomable></zoomable>
+    <color>#3399FF</color>
+    <line_alpha></line_alpha>
+    <selection_color></selection_color>
+    <selection_alpha></selection_alpha>
+    <x_balloon_enabled></x_balloon_enabled>
+    <x_balloon_text_color></x_balloon_text_color>
+  </indicator>
+  
+  <legend>
+    <enabled>0</enabled>
+    <x></x>
+    <y></y>
+    <width></width>
+    <max_columns></max_columns>
+    <color></color>
+    <alpha></alpha>
+    <border_color></border_color>
+    <border_alpha></border_alpha>
+    <text_color></text_color>
+    <text_color_hover></text_color_hover>
+    <text_size></text_size>
+    <spacing></spacing>
+    <margins></margins>
+    <graph_on_off></graph_on_off>
+    <reverse_order></reverse_order>
+    <align></align>
+  </legend>
+  
+  <!-- 图片导出方法 -->
+  <export_as_image>
+    <file>servlet/ExportImage</file>
+    <target></target>
+    <x></x>
+    <y></y>
+    <color></color>
+    <alpha></alpha>
+    <text_color>#ff0000</text_color>
+    <text_size></text_size>
+  </export_as_image>
+  
+  <!-- 图片导出设置 -->
+  <strings>
+    <no_data></no_data>
+    <export_as_image>导出图片</export_as_image>
+    <collecting_data>正在导出,请稍后</collecting_data>
+  </strings>
+  
+</settings>

@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>浙江省外经贸运行调查监测系统</title>
+<link rel="stylesheet" media="screen" href="css/index.css" />
+<style type="text/css">
+.mass {
+	float:left;
+	margin-top:9px;
+*margin-top:5px !important;
+*margin-top:5px;
+	margin-right:7px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script>
+function show_a(){
+	$(".show_a").css("display","block"),$(".show_b").css("display","none");
+}
+function show_b(){
+	$(".show_b").css("display","block"),$(".show_a").css("display","none");
+}
+function show_c(){
+	$(".show_a").css("display","none"),$(".show_b").css("display","none");
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="top">
+    <div class="banner"></div>
+  </div>
+  <div id="menu_out">
+    <div id="menu_in">
+      <div id="menu">
+        <ul id="nav">
+          <li class="menu_linel"></li>
+          <li><a href="index.html" class="nav_off"><span>首页</span></a></li>
+          <li class="menu_line"></li>
+          <li><a href="tongji.html" class="nav_off"><span>报表统计</span></a></li>
+          <li class="menu_line"></li>
+          <li><a href="Audited.html" class="nav_off"><span>企业基本情况</span></a></li>
+          <li class="menu_line"></li>
+          <li><a href="ckdcwja.html" class="nav_off"><span>调查问卷表</span></a></li>
+          <li class="menu_line"></li>
+          <li><a href="xtz.html" class="nav_off"><span>最新通知</span></a></li>
+          <li class="menu_line"></li>
+          <li><a href="qyk.html" class="nav_off"><span>用户管理</span></a></li>
+          <li class="menu_line"></li>
+          <li><a href="javascript:window.close()" class="nav_off"><span>退出系统</span></a></li>
+        </ul>
+        <div id="menu_con">
+          <div id="qh_con0" style="display:none;">
+            <ul>
+              <li><span class="gly">当前用户：管理员</span></li>
+            </ul>
+          </div>
+          <div id="qh_con1" style="display:none;">
+            <ul>
+              <li><span class="gly">当前用户：管理员</span></li>
+            </ul>
+          </div>
+          <div id="qh_con2" style="display:none;">
+            <ul>
+              <li><span class="gly">当前用户：管理员</span></li>
+              <li class="menu_linel1"></li>
+              <li><a href="Audited.html"><span>已审核企业</span></a></li>
+              <li class="menu_line2"></li>
+              <li><a href="Unaudited.html"><span>未审核企业</span></a></li>
+              <li class="menu_line2"></li>
+              <li><a href="qytable.html"><span>填写企业基本情况</span></a></li>
+            </ul>
+          </div>
+          <div id="qh_con3" style="display:none;">
+            <ul>
+              <li><span class="gly">当前用户：管理员</span></li>
+              <li class="menu_linel23"></li>
+              <li><a href="ckdcwja.html"><span>已过期调查问卷表</span></a></li>
+              <li class="menu_line2"></li>
+              <li><a href="ckdcwjb.html"><span>未过期调查问卷表</span></a></li>
+              <li class="menu_line2"></li>
+              <li><a href="table.html"><span>填写调查问卷表</span></a></li>
+            </ul>
+          </div>
+          <div id="qh_con4" style="display:none;">
+            <ul>
+              <li><span class="gly">当前用户：管理员</span></li>
+              <li class="menu_linel2"></li>
+              <li><a href="xtz.html"><span>写通知</span></a></li>
+              <li class="menu_line2"></li>
+              <li><a href="zxtz.html"><span>通知列表</span></a></li>
+            </ul>
+          </div>
+          <div id="qh_con5" style="display:none;">
+            <ul>
+              <li><span class="gly">当前用户：管理员</span></li>
+              <li class="menu_linel4"></li>
+              <li><a href="qyk.html"><span>企业库</span></a></li>
+              <li class="menu_line2"></li>
+              <li><a href="Change_Password.html"><span>修改密码</span></a></li>
+            </ul>
+          </div>
+          <div id="qh_con6" style="display:none;">
+            <ul>
+              <li><span class="gly">当前用户：管理员</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wz"><span>位置 : 调查问卷表 > 201011出口预期调查</span></div>
+  <div class="content">
+    <div class="tt"><span>欢迎登录浙江省外经贸运行调查监测系统</span></div>
+    <div class="tt_table">
+      <div class="tt_tablea"><span class="zsht">出口预期调查</span></div>
+      <table width="949" bordercolor="#acacac" height="102" border="1" class="tablea">
+        <tr>
+          <td width="238" rowspan="3" class="a_zzz"><span>1.本企业明年出口预计</span></td>
+          <td width="695"><input id="team1" class="xxx mass" type="radio" name="radio" onclick="show_a();" />
+            <span class="xx" style="margin:0; float:left;">A 增长</span>
+            <input type="text" name="money" class="zzz show_a" style="display:none; float:left; margin-top:6px;" />
+            <label for="team1" class="show_a" style="display:none; float:left;"><span>%</span></label></td>
+        </tr>
+        <tr>
+          <td width="695"><input id="team4" class="xxx mass" type="radio" name="radio" onclick="show_b();" />
+            <span class="xx" style="margin:0; float:left;">C 下降</span>
+            <input type="text" name="money" class="zzz show_b" style="display:none; float:left; margin-top:6px;" />
+            <label for="team1" class="show_b" style="display:none; float:left;"><span>%</span></label></td>
+        </tr>
+        <tr>
+          <td width="695"><input class="xxx" type="radio" name="radio" onclick="show_c();" />
+            <span class="xx" style="margin:0">B 持平</span></td>
+        </tr>
+      </table>
+      <table width="949" bordercolor="#acacac" border="1" class="tableb">
+        <tr>
+          <td colspan="2">2.影响明年出口的主要因素有：</td>
+        </tr>
+        <tr>
+          <td width="245"><span class="xx">第一位：</span></td>
+          <td width="690"><p>
+              <input id="team3" class="xxxx" type="radio" name="mg" />
+              <label for="team3" style="cursor:pointer;"><span>A 人民币升值</span></label>
+              <input id="team4" class="xxxx" type="radio" name="mg" />
+              <label for="team4" style="cursor:pointer;"><span>B 原材料价格上涨</span></label>
+              <input id="team5" class="xxxx" type="radio" name="mg" />
+              <label for="team5" style="cursor:pointer;"><span>C 国际市场需求的不确定性</span></label>
+            </p>
+            <p>
+              <input id="team6" class="xxxx" type="radio" name="mg" />
+              <label for="team6" style="cursor:pointer;"><span>D 国家货币政策趋紧，融资成本上升</span></label>
+              <input id="team7" class="xxxx" type="radio" name="mg" />
+              <label for="team7" style="cursor:pointer;"><span>E 招工不足导致的开工不足</span></label>
+            </p>
+            <p>
+              <input id="team8" class="xxxx" type="radio" name="mg" />
+              <label for="team8" style="cursor:pointer;"><span>F 节能减排的压力导致企业成本上升、开工不足</span></label>
+            </p>
+            <p>
+              <input id="team9" class="xxxx" type="radio" name="mg" />
+              <label for="team9" style="cursor:pointer;"><span>G 通货膨胀压力导致企业经营成本上升</span></label>
+              <input id="team10" class="xxxx" type="radio" name="mg" />
+              <label for="team10" style="cursor:pointer;"><span>H 国际贸易摩擦、技术壁垒等增多</span></label>
+            </p>
+            <p>
+              <input id="team11" class="xxxx" type="radio" name="mg" />
+              <label for="team11" style="cursor:pointer;"><span>I 劳动力成本进一步提高</span></label>
+            </p></td>
+        </tr>
+        <tr>
+          <td width="245"><span class="xx">第二位：</span></td>
+          <td width="690"><p>
+              <input id="team12" class="xxxx" type="radio" name="oz" />
+              <label for="team12" style="cursor:pointer;"><span>A 人民币升值</span></label>
+              <input id="team13" class="xxxx" type="radio" name="oz" />
+              <label for="team13" style="cursor:pointer;"><span>B 原材料价格上涨</span></label>
+              <input id="team14" class="xxxx" type="radio" name="oz" />
+              <label for="team14" style="cursor:pointer;"><span>C 国际市场需求的不确定性</span></label>
+            </p>
+            <p>
+              <input id="team15" class="xxxx" type="radio" name="oz" />
+              <label for="team15" style="cursor:pointer;"><span>D 国家货币政策趋紧，融资成本上升</span></label>
+              <input id="team16" class="xxxx" type="radio" name="oz" />
+              <label for="team16" style="cursor:pointer;"><span>E 招工不足导致的开工不足</span></label>
+            </p>
+            <p>
+              <input id="team17" class="xxxx" type="radio" name="oz" />
+              <label for="team17" style="cursor:pointer;"><span>F 节能减排的压力导致企业成本上升、开工不足</span></label>
+            </p>
+            <p>
+              <input id="team18" class="xxxx" type="radio" name="oz" />
+              <label for="team18" style="cursor:pointer;"><span>G 通货膨胀压力导致企业经营成本上升</span></label>
+              <input id="team19" class="xxxx" type="radio" name="oz" />
+              <label for="team19" style="cursor:pointer;"><span>H 国际贸易摩擦、技术壁垒等增多</span></label>
+            </p>
+            <p>
+              <input id="team20" class="xxxx" type="radio" name="oz" />
+              <label for="team20" style="cursor:pointer;"><span>I 劳动力成本进一步提高</span></label>
+            </p></td>
+        </tr>
+        <tr>
+          <td width="245"><span class="xx">第三位：</span></td>
+          <td width="690"><p>
+              <input id="team21" class="xxxx" type="radio" name="xg" />
+              <label for="team21" style="cursor:pointer;"><span>A 人民币升值</span></label>
+              <input id="team22" class="xxxx" type="radio" name="xg" />
+              <label for="team22" style="cursor:pointer;"><span>B 原材料价格上涨</span></label>
+              <input id="team23" class="xxxx" type="radio" name="xg" />
+              <label for="team23" style="cursor:pointer;"><span>C 国际市场需求的不确定性</span></label>
+            </p>
+            <p>
+              <input id="team24" class="xxxx" type="radio" name="xg" />
+              <label for="team24" style="cursor:pointer;"><span>D 国家货币政策趋紧，融资成本上升</span></label>
+              <input id="team25" class="xxxx" type="radio" name="xg" />
+              <label for="team25" style="cursor:pointer;"><span>E 招工不足导致的开工不足</span></label>
+            </p>
+            <p>
+              <input id="team26" class="xxxx" type="radio" name="xg" />
+              <label for="team26" style="cursor:pointer;"><span>F 节能减排的压力导致企业成本上升、开工不足</span></label>
+            </p>
+            <p>
+              <input id="team27" class="xxxx" type="radio" name="xg" />
+              <label for="team27" style="cursor:pointer;"><span>G 通货膨胀压力导致企业经营成本上升</span></label>
+              <input id="team28" class="xxxx" type="radio" name="xg" />
+              <label for="team28" style="cursor:pointer;"><span>H 国际贸易摩擦、技术壁垒等增多</span></label>
+            </p>
+            <p>
+              <input id="team29" class="xxxx" type="radio" name="xg" />
+              <label for="team29" style="cursor:pointer;"><span>I 劳动力成本进一步提高</span></label>
+            </p></td>
+        </tr>
+        <tr>
+          <td width="245"><span class="xx">第四位：</span></td>
+          <td width="690"><p>
+              <input id="team30" class="xxxx" type="radio" name="rb" />
+              <label for="team30" style="cursor:pointer;"><span>A 人民币升值</span></label>
+              <input id="team31" class="xxxx" type="radio" name="rb" />
+              <label for="team31" style="cursor:pointer;"><span>B 原材料价格上涨</span></label>
+              <input id="team32" class="xxxx" type="radio" name="rb" />
+              <label for="team32" style="cursor:pointer;"><span>C 国际市场需求的不确定性</span></label>
+            </p>
+            <p>
+              <input id="team33" class="xxxx" type="radio" name="rb" />
+              <label for="team33" style="cursor:pointer;"><span>D 国家货币政策趋紧，融资成本上升</span></label>
+              <input id="team34" class="xxxx" type="radio" name="rb" />
+              <label for="team34" style="cursor:pointer;"><span>E 招工不足导致的开工不足</span></label>
+            </p>
+            <p>
+              <input id="team35" class="xxxx" type="radio" name="rb" />
+              <label for="team35" style="cursor:pointer;"><span>F 节能减排的压力导致企业成本上升、开工不足</span></label>
+            </p>
+            <p>
+              <input id="team36" class="xxxx" type="radio" name="rb" />
+              <label for="team36" style="cursor:pointer;"><span>G 通货膨胀压力导致企业经营成本上升</span></label>
+              <input id="team37" class="xxxx" type="radio" name="rb" />
+              <label for="team37" style="cursor:pointer;"><span>H 国际贸易摩擦、技术壁垒等增多</span></label>
+            </p>
+            <p>
+              <input id="team38" class="xxxx" type="radio" name="rb" />
+              <label for="team38" style="cursor:pointer;"><span>I 劳动力成本进一步提高</span></label>
+            </p></td>
+        </tr>
+        <tr>
+          <td width="245"><span class="xx">第五位：</span></td>
+          <td width="690"><p>
+              <input id="team39" class="xxxx" type="radio" name="zd" />
+              <label for="team39" style="cursor:pointer;"><span>A 人民币升值</span></label>
+              <input id="team40" class="xxxx" type="radio" name="zd" />
+              <label for="team40" style="cursor:pointer;"><span>B 原材料价格上涨</span></label>
+              <input id="team41" class="xxxx" type="radio" name="zd" />
+              <label for="team41" style="cursor:pointer;"><span>C 国际市场需求的不确定性</span></label>
+            </p>
+            <p>
+              <input id="team42" class="xxxx" type="radio" name="zd" />
+              <label for="team42" style="cursor:pointer;"><span>D 国家货币政策趋紧，融资成本上升</span></label>
+              <input id="team43" class="xxxx" type="radio" name="zd" />
+              <label for="team43" style="cursor:pointer;"><span>E 招工不足导致的开工不足</span></label>
+            </p>
+            <p>
+              <input id="team44" class="xxxx" type="radio" name="zd" />
+              <label for="team44" style="cursor:pointer;"><span>F 节能减排的压力导致企业成本上升、开工不足</span></label>
+            </p>
+            <p>
+              <input id="team45" class="xxxx" type="radio" name="zd" />
+              <label for="team45" style="cursor:pointer;"><span>G 通货膨胀压力导致企业经营成本上升</span></label>
+              <input id="team46" class="xxxx" type="radio" name="zd" />
+              <label for="team46" style="cursor:pointer;"><span>H 国际贸易摩擦、技术壁垒等增多</span></label>
+            </p>
+            <p>
+              <input id="team47" class="xxxx" type="radio" name="zd" />
+              <label for="team47" style="cursor:pointer;"><span>I 劳动力成本进一步提高</span></label>
+            </p></td>
+        </tr>
+        <tr>
+          <td width="245"><span class="xx">第六位：</span></td>
+          <td width="690"><p>
+              <input id="team48" class="xxxx" type="radio" name="zd" />
+              <label for="team48" style="cursor:pointer;"><span>A 人民币升值</span></label>
+              <input id="team49" class="xxxx" type="radio" name="zd" />
+              <label for="team49" style="cursor:pointer;"><span>B 原材料价格上涨</span></label>
+              <input id="team50" class="xxxx" type="radio" name="zd" />
+              <label for="team50" style="cursor:pointer;"><span>C 国际市场需求的不确定性</span></label>
+            </p>
+            <p>
+              <input id="team51" class="xxxx" type="radio" name="zd" />
+              <label for="team51" style="cursor:pointer;"><span>D 国家货币政策趋紧，融资成本上升</span></label>
+              <input id="team52" class="xxxx" type="radio" name="zd" />
+              <label for="team52" style="cursor:pointer;"><span>E 招工不足导致的开工不足</span></label>
+            </p>
+            <p>
+              <input id="team53" class="xxxx" type="radio" name="zd" />
+              <label for="team53" style="cursor:pointer;"><span>F 节能减排的压力导致企业成本上升、开工不足</span></label>
+            </p>
+            <p>
+              <input id="team54" class="xxxx" type="radio" name="zd" />
+              <label for="team54" style="cursor:pointer;"><span>G 通货膨胀压力导致企业经营成本上升</span></label>
+              <input id="team55" class="xxxx" type="radio" name="zd" />
+              <label for="team55" style="cursor:pointer;"><span>H 国际贸易摩擦、技术壁垒等增多</span></label>
+            </p>
+            <p>
+              <input id="team56" class="xxxx" type="radio" name="zd" />
+              <label for="team56" style="cursor:pointer;"><span>I 劳动力成本进一步提高</span></label>
+            </p></td>
+        </tr>
+        <tr>
+          <td colspan="2" ><p>3.目前企业出口报价以汇率
+              <input class="zzz" type="text" name="money" />
+              来报价，以6.8为基数;</p>
+            <p>人民币汇率相对美元每升值1%，企业出口报价提高
+              <input class="zzz" type="text" name="money" />
+              %，订单损失
+              <input class="zzz" type="text" name="money" />
+              %。</p></td>
+        </tr>
+        <tr>
+          <td width="245">4、到目前为止，企业是否有部分订单转移至周边市场（指境外）</td>
+          <td width="690"><input id="team57" class="xxxx" type="radio" name="mg" />
+            <label for="team57" style="cursor:pointer;"><span>A 是</span></label>
+            <input id="team58" class="xxxx" type="radio" name="mg" />
+            <label for="team58" style="cursor:pointer;"><span>B 否</span></label></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="lianxi"><p>企业负责人:
+              <input type="text" />
+              联系电话:
+              <input class="xh" type="text" />
+              -
+              <input type="text" />
+            </p>
+            <br />
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;填报人:
+              <input type="text" />
+              联系电话:
+              <input class="xh" type="text" />
+              -
+              <input type="text" />
+            </p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="tj"> <a href="ckdcwjb.html"><img src="images/c_3-adddd.gif" /></a> </div>
+</div>
+</body>
+</html>

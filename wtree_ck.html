@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>菜单选择</title>
+<link rel="stylesheet" type="text/css" href="check_tree/dtree.css" />
+<script type="text/javascript" src="check_tree/wtree.js"></script>
+<style type="text/css">
+body{font-family:\5B8B\4F53;}
+#systree{height:300px; width:300px; overflow:auto;}
+a.button{margin-left:120px;}
+img{border:0 none;}
+</style>
+</head>
+<body>
+<div id="systree"></div>
+<a class="button" href="#" onclick="sel();"><img src="images/tj.gif" /></a>
+<script type="text/javascript">
+	//取出选择的ID
+	function sel(){
+		var selids=d.getCheckedNodes();
+		var str="";
+		for(var n=0; n<selids.length; n++){
+			str+=selids[n]+";";
+		}
+		alert(str);
+	}
+	var d = new dTree('d','images/');
+	d.config.folderLinks=true;
+	d.config.useCookies=false;
+	d.config.check=true;
+	
+		d.add(0,-1,'系统菜单',"javascript:;",'提示');
+		d.add(100,0,'系统管理',"javascript:;",'所有系统管理功能');
+		d.add(790,100,'菜单管理',"javascript:;",'菜单管理');
+		d.add(800,100,'组织机构',"javascript:;",'');
+		d.add(810,100,'用户管理',"javascript:;",'');
+		d.add(102,0,'系统机构',"javascript:;",'')	;
+		d.add(300,102,'人员管理',"javascript:;",'');
+		d.add(301,102,'部门管理',"javascript:;",'');
+		d.add(302,102,'机构管理',"javascript:;",'');
+		d.add(103,0,'权限管理',"javascript:;",'');
+		d.add(400,103,'角色维护',"javascript:;",'');
+		d.add(401,103,'功能分配',"javascript:;",'');
+		d.add(402,103,'角色分配',"javascript:;",'');
+		d.add(403,103,'角色分配',"javascript:;",'');
+		d.add(404,103,'角色分配',"javascript:;",'');
+		d.add(405,103,'角色分配',"javascript:;",'');
+		d.add(406,103,'角色分配',"javascript:;",'');
+		d.add(407,103,'角色分配',"javascript:;",'');
+		d.add(408,103,'角色分配',"javascript:;",'');
+		d.add(409,103,'角色分配',"javascript:;",'');
+		d.add(410,103,'角色分配',"javascript:;",'');
+		d.add(411,103,'角色分配',"javascript:;",'');
+		d.add(412,103,'角色分配',"javascript:;",'');
+		d.add(413,103,'角色分配',"javascript:;",'');
+		d.add(414,103,'角色分配',"javascript:;",'');
+		d.add(415,103,'角色分配',"javascript:;",'');
+		 
+	document.getElementById('systree').innerHTML = d;
+	//var funcs = eval("("+"{funcs:[{menudm:'0'},{menudm:'100'},{menudm:'790'},{menudm:'800'},{menudm:'810'}]}"+")");
+	/*for(var n=0; n<funcs.funcs.length;n++){
+		d.co(funcs.funcs[n].menudm).checked=true;
+	}*/
+</script>
+</body>
+</html>
